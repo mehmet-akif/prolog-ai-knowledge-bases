@@ -1,0 +1,121 @@
+
+% Enter the names of your group members below.
+% If you only have 2 group members, leave the last space blank
+%
+%%%%%
+%%%%% NAME: Enes Polat
+%%%%% NAME: Akif Sipahi
+%%%%% NAME: Ekrem Yilmaz
+%
+% Add your queries below. Please use the following format
+% 
+% %%%%% QUERY 2
+% % EXPLANATION: Checks if there is a block on blockA
+% on(X, blockA).
+%
+% where 2 is the number of the query. The EXPLANATION line should contain your explanation 
+% in English of what the query tests. Omit the "%" on the line with the query
+% Don't forget to end queries with a period.
+
+%%%%%% QUERY 1
+% EXPLANATION: Calculate the subtotal for John at CIBC.
+subtotal(john, cibc, Subtotal).
+
+
+%%%%%% QUERY 2
+% EXPLANATION: Calculate the accrued interest for Alice at BMO.
+accruedInterest(alice, bmo, Interest).
+
+
+%%%%%% QUERY 3
+% EXPLANATION: Calculate the penalty for John at BMO.
+accruedPenalty(john, bmo, Penalty).
+
+
+%%%%%% QUERY 4
+% EXPLANATION: Calculate the end-of-month balance for Alice at CIBC.
+endOfMonthBalance(alice, cibc, Balance).
+
+
+%%%%%% QUERY 5
+% EXPLANATION: Calculate the end-of-month balance for John at all banks.
+endOfMonthBalance(john, TotalBalance).
+
+
+%%%%%% QUERY 6
+% EXPLANATION: Check if Alice is eligible for interest at CIBC.
+accruedInterest(alice, cibc, Interest).
+
+
+%%%%%% QUERY 7
+% EXPLANATION: Calculate the penalty for Alice at BMO if she overdrafts.
+accruedPenalty(alice, bmo, Penalty).
+
+
+%%%%%% QUERY 8
+% EXPLANATION: Calculate the end-of-month balance for Alice at both banks.
+endOfMonthBalance(alice, TotalBalance).
+
+
+%%%%%% QUERY 9
+% EXPLANATION: Calculate the subtotal for Alice at CIBC.
+subtotal(alice, cibc, Subtotal).
+
+%%%%%% QUERY 10
+% EXPLANATION: Calculate the accrued interest for John at BMO.
+accruedInterest(john, bmo, Interest).
+
+
+%%%%%% YOU MAY CHOOSE TO ADD MORE THAN 10 QUERIES HERE
+%%%%%% HOWEVER, ONLY THE FIRST 10 WILL BE MARKED
+
+%%%%% INTERACTION
+%
+% Add your interaction below.
+% 
+
+?- subtotal(john, cibc, Subtotal).
+Subtotal = 1400
+Yes (0.00s cpu, solution 1, maybe more)
+No (0.00s cpu)
+
+?- accruedInterest(alice, bmo, Interest).
+Interest = 5.775
+Yes (0.00s cpu)
+
+?- accruedPenalty(john, bmo, Penalty).
+Penalty = 0
+Yes (0.00s cpu)
+
+?- endOfMonthBalance(alice, cibc, Balance).
+Balance = 1356.75
+Yes (0.00s cpu, solution 1, maybe more)
+No (0.00s cpu)
+
+?- endOfMonthBalance(john, TotalBalance).
+TotalBalance = 2057.0
+Yes (0.00s cpu, solution 1, maybe more)
+No (0.00s cpu)
+
+?- accruedInterest(alice, cibc, Interest).
+Interest = 6.75
+Yes (0.00s cpu, solution 1, maybe more)
+No (0.00s cpu)
+
+?- accruedPenalty(alice, bmo, Penalty).
+Penalty = 0
+Yes (0.00s cpu)
+
+?- endOfMonthBalance(alice, TotalBalance).
+TotalBalance = 3287.525
+Yes (0.00s cpu, solution 1, maybe more)
+No (0.00s cpu)
+
+?- subtotal(alice, cibc, Subtotal).
+Subtotal = 1350
+Yes (0.00s cpu, solution 1, maybe more)
+No (0.00s cpu)
+
+?- accruedInterest(john, bmo, Interest).
+Interest = 0
+Yes (0.00s cpu)
