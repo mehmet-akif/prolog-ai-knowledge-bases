@@ -57,7 +57,6 @@ The assignment is divided into three main tasks:
 
 Each `.pl` file contains example queries such as:
 
-```prolog
 % Q1 examples
 ?- lives(ada_lovelace, san_francisco).
 ?- hasAccount(alan_turing, cibc, Balance).
